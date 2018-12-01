@@ -1,6 +1,6 @@
 package codes;
 
-public class Main {
+public class Tour {
 
 	public static void main(String[] args) {
 
