@@ -14,7 +14,7 @@ public class LinkedGrid { //linked grid for knight's tour
 		Node temp = new Node(); //create a temporary node
 		temp = topLeft;
 			
-		for (int x = 1; x < height; x++) { //only creates the first row
+		for (int x = 1; x < length; x++) { //only creates the first row
 			temp.setData(columnLetter[0] + x);
 		    	temp.setRight(new Node());
 			temp.getRight().setLeft(temp);
@@ -51,6 +51,25 @@ public class LinkedGrid { //linked grid for knight's tour
 		
 	} //finish constructor
 
+	public void display () { //check if the grid is build properly
+	    
+	    Node temp = new Node();
+	    Node row = new Node();
+	    temp = topLeft;
+	    row = topLeft;
+	    
+	    for (int y = 0; y < height; y++) {
+		temp = row;
+		for (int x = 0; x < length; x++) { 
+    			System.out.print(temp.getData() + " ");
+    			temp = temp.getRight();
+		}
+		row = row.getDown();
+		System.out.println();
+	    }
+	    
+	}
+	
 	public Node getTopLeft() {
 	    return topLeft;
 	}
