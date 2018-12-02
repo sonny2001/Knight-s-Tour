@@ -3,7 +3,7 @@ package codes;
 public class LinkedGrid { //linked grid for knight's tour
 	
 	private Node topLeft = new Node();
-	private String [] columnLetter = {"A","B","C","D","E","F","G","H'","I","J","K"};
+	private String [] columnLetter = {"A","B","C","D","E","F","G","H'","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
 	private int length;
 	private int height;
 	
