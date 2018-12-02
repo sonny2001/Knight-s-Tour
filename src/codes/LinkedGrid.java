@@ -7,7 +7,7 @@ public class LinkedGrid { //linked grid for knight's tour
 	private int length;
 	private int height;
 	
-	public LinkedGrid (int length, int height) {
+	public LinkedGrid (int length, int height) { //begin constructor
 		
 	    	this.length = length; //set dimensions of the grid
 	    	this.height = height;
@@ -43,11 +43,36 @@ public class LinkedGrid { //linked grid for knight's tour
 				temp.getUp().setDown(temp);
 				
 			}
+			
 			temp.setData(columnLetter[y] + x);
 			row = row.getDown();
 			
-		}
+		} //finish the rest of the grid
 		
+	} //finish constructor
+
+	public Node getTopLeft() {
+	    return topLeft;
+	}
+
+	public void setTopLeft(Node topLeft) {
+	    this.topLeft = topLeft;
+	}
+
+	public int getLength() {
+	    return length;
+	}
+
+	public void setLength(int length) {
+	    this.length = length;
+	}
+
+	public int getHeight() {
+	    return height;
+	}
+
+	public void setHeight(int height) {
+	    this.height = height;
 	}
 
 }
