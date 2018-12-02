@@ -2,25 +2,25 @@ package codes;
 
 public class Node {//for knight's tour
 	
-	private int data;
+	private String data;
 	private Node right;
 	private Node left;
 	private Node up;
 	private Node down;
 	
-	public Node (int input) {
-		data = input;
+	public Node () {
+		data = null;
 		right = null;
 		left = null;
 		up = null;
 		down = null;
 	}
 
-	public int getData() {
+	public String getData() {
 		return data;
 	}
 
-	public void setData(int data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 

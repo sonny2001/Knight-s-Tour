@@ -6,6 +6,7 @@ public class Tour {
 
 		LinkedGrid grid = new LinkedGrid(4,4);
 		
+		System.out.println();
 	}
 
 }
