@@ -92,6 +92,7 @@ public class Tour {
 	    	else { //can't go further/stuck
 	    	    	start.setVisited(false);
 	    	    	solution [counter] = null;
+	    	    	counter--;
 	    	}
 	    
 	} //end the tour
