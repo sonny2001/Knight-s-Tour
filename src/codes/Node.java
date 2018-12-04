@@ -2,26 +2,36 @@ package codes;
 
 public class Node {//for knight's tour
 	
-	private String data;
+	private String position;
+	private boolean visited;
 	private Node right;
 	private Node left;
 	private Node up;
 	private Node down;
 	
 	public Node () {
-		data = null;
+		position = null;
+		visited = false;
 		right = null;
 		left = null;
 		up = null;
 		down = null;
 	}
 
-	public String getData() {
-		return data;
+	public String getPosition() {
+	    return position;
 	}
 
-	public void setData(String data) {
-		this.data = data;
+	public void setPosition(String position) {
+	    this.position = position;
+	}
+
+	public boolean isVisited() {
+	    return visited;
+	}
+
+	public void setVisited(boolean visited) {
+	    this.visited = visited;
 	}
 
 	public Node getRight() {
