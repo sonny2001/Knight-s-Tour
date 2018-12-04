@@ -11,8 +11,7 @@ public class Tour {
 		
 		//grid.display();
 		
-		while (true)
-		    	tour(grid.getTopLeft());
+		tour(grid.getTopLeft());
 		
 	}
 	
@@ -88,9 +87,9 @@ public class Tour {
 	    	    	print();
 	    	
 	    	//can't go further/stuck
-	    	start.setVisited(false);
 	    	solution [counter] = null;
 	        	counter--;
+	        	start.setVisited(false);
 	    	    
 	} //end the tour
 	
