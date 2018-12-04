@@ -11,7 +11,8 @@ public class Tour {
 		
 		//grid.display();
 		
-		tour(grid.getTopLeft());
+		while (true)
+		    	tour(grid.getTopLeft());
 		
 	}
 	
@@ -89,20 +90,20 @@ public class Tour {
 	    	    	solution = new String [64];
 	    	}
 	    	
-	    	else { //can't go further/stuck
-	    	    	start.setVisited(false);
-	    	    	solution [counter] = null;
-	    	    	counter--;
-	    	}
-	    
+	    	//can't go further/stuck
+	    	start.setVisited(false);
+	    	solution [counter] = null;
+	        	counter--;
+	    	    
 	} //end the tour
 	
 	public static void print () { //print the solution if there is one
 	   
 	    	for (int x = 0; x < 64; x++) {
-	    	    System.out.println(solution[x] + " ");
+	    	    	System.out.print(solution[x] + " ");
 	    	}
-	
+	    	System.out.println();
+	    	
 	} //end print
 
 }
