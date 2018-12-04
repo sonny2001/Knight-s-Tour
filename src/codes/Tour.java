@@ -2,7 +2,7 @@ package codes;
 
 public class Tour {
 
-    	public static String [] solution = new String [64];
+    	public static String [] solution = new String [65];
     	public static int counter = 0;
     
 	public static void main(String[] args) {
@@ -84,11 +84,8 @@ public class Tour {
 	    	    	tour(step8);
 	    	
 	    	//if complete and found a solution
-	    	if (solution [63] != null) {
+	    	if (solution [63] != null)
 	    	    	print();
-	    	    	counter = 0;
-	    	    	solution = new String [64];
-	    	}
 	    	
 	    	//can't go further/stuck
 	    	start.setVisited(false);
